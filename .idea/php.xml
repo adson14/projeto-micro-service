@@ -82,6 +82,11 @@
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <phpunit_by_interpreter interpreter_id="0c702932-fd19-4c89-9bea-2fc07fce372e" custom_loader_path="/opt/project/vendor/autoload.php" phpunit_phar_path="" />
+    </phpunit_settings>
+  </component>
   <component name="PsalmOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>

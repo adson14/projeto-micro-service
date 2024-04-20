@@ -6,9 +6,12 @@ services:
       context: .
       dockerfile: Dockerfile
     restart: always
-    working_dir: /var/www
+    working_dir: /var/www/
     volumes:
       - ./:/var/www
+      - ./docker/php/custom.ini:/usr/local/etc/php/conf.d/custom.ini
+      - ./docker/php/90-xdebug.ini:/usr/local/etc/php/conf.d/90-xdebug.ini
+    env_file: .env
     networks:
       - estudo
 

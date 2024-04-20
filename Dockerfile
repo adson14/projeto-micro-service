@@ -26,12 +26,8 @@ RUN pecl install -o -f redis \
 RUN groupadd -g ${GROUP_ID} appgroup \
     && useradd -u ${USER_ID} -g ${GROUP_ID} -m appuser
 
-RUN pecl install xdebug && docker-php-ext-enable xdebug && \
-  echo "xdebug.mode=coverage" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+RUN pecl install xdebug && docker-php-ext-enable xdebug
 
 WORKDIR /var/www
-
-
-COPY docker/php/custom.ini /usr/local/etc/php/conf.d/custom.ini
 
 USER appuser
