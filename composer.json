@@ -1,0 +1,10 @@
+{
+    "name": "adson14/projeto-micro-service",
+    "description": "App In PHP - Microseervice",
+    "authors": [
+        {
+            "name": "Adson Souza"
+        }
+    ],
+    "require": {}
+}
