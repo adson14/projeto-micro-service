@@ -39,13 +39,13 @@
 			$this->description = $description ?? $this->description;
 		}
 
-		public function validate()
+		private function validate()
 		{
 			DomainValidation::strMaxLength($this->name, 30);
 			DomainValidation::strMinLength($this->name, 3);
 
 			if(!empty($this->description)){
-				DomainValidation::strMinLength($this->description, 5);
+				DomainValidation::strMinLength($this->description, 15);
 				DomainValidation::strMaxLength($this->description, 255);
 			}
 		}
